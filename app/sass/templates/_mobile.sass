@@ -1,0 +1,60 @@
+.mobile
+  min-height: 864px
+  padding: 48px 0 79px 0
+  background: url('../img/mobile_app.png') center center/cover no-repeat
+  &__wrapper
+    margin-top: 32px
+  &-item
+    position: relative
+    margin: 0 auto
+    margin-bottom: 19px
+    padding-top: 91px
+    width: 320px
+    height: 280px
+    background: url('../img/mobile_screen_1.jpg') center center/cover no-repeat
+    &__subtitle
+      color: $text-color
+      font-size: 24px
+      text-transform: uppercase
+      text-align: center
+    &__plus
+      position: absolute
+      display: flex
+      justify-content: center
+      align-items: center
+      margin: 0 auto
+      padding: 6px
+      bottom: 35px
+      left: 50%
+      transform: translateX(-50%)
+      width: 26px
+      height: 26px
+      background-color: #000000
+      border-radius: 100%
+      cursor: pointer
+      &:before
+        content: ''
+        display: block
+        width: 14px
+        height: 2px
+        background-color: $primary
+        transition: 0.3s all
+      &:after
+        content: ''
+        position: absolute
+        left: 50%
+        transform: translateX(-50%)
+        display: block
+        height: 14px
+        width: 2px
+        background-color: $primary
+        transition: 0.3s all
+      &:hover
+        &:before, &:after
+          background-color: $secondary
+
+
+
+
+
+

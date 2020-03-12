@@ -1,0 +1,70 @@
+.header
+  position: relative
+  &__nav
+    background-color: #212121
+    height: 50px;
+  .hamburger
+    display: none
+  .menu
+    display: flex
+    justify-content: space-between
+    align-items: center
+    height: 50px
+    padding: 0 70px
+    margin: 0
+    list-style: none
+    a 
+      text-decoration: none
+    &__link
+      color: $text-color
+      font-size: 15px
+      font-weight: 300
+      &:hover
+        color: $primary
+    &__item
+      border-right: 2px dotted #000000
+      padding-right: 28px
+      display: inline-block
+      vertical-align: middle
+      &:last-child
+        border-right: 0
+        padding-right: 0
+  .subheader
+    position: absolute
+    width: 100%
+    min-height: 84px
+    background-color: rgba(0, 0, 0, 0.6)
+    display: flex
+    align-items: center
+    &__logo
+      max-width: 100%
+    &__official
+      opacity: 0.5
+      color: $text-color
+      font-size: 13px
+      font-weight: 400
+    &__call
+      margin-top: 8px
+      color: $text-color
+      font-size: 12px
+      font-weight: 300
+      line-height: 13px
+      text-align: right
+    &__phone
+      display: block
+      color: $text-color
+      font-size: 22px
+      line-height: 30px
+      font-weight: 400
+      text-align: right   
+    &__btn
+      margin-top: 2px
+      width: 172px
+      height: 46px
+      font-size: 14px
+  .xs-visible
+    display: none
+
+
+  
+
